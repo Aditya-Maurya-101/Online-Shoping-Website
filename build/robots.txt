@@ -1,8 +1,0 @@
-# robots.txt for ONLINE Shopping
-# Allow all crawlers to index the site and point them to the sitemap
-
-User-agent: *
-Disallow:
-
-# Sitemap (absolute URL recommended)
-Sitemap: https://orebishopping.reactbd.com/sitemap.xml
