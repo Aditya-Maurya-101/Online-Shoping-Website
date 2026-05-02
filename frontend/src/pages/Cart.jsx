@@ -15,7 +15,7 @@ const Cart = () => {
   useEffect(() => {
     let price = 0;
     products.map((item) => {
-      price += item.price * item.quantity;
+      price += parseFloat(item.price) * item.quantity;
       return price;
     });
     setTotalAmt(price);

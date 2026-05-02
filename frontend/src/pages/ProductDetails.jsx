@@ -34,7 +34,7 @@ const ProductDetails = () => {
         quantity: quantity,
         image: images[0],
         badge: product.badge,
-        price: product.discountPrice || product.price,
+        price: parseFloat(product.discountPrice || product.price),
         colors: product.color,
       })
     );
@@ -50,7 +50,7 @@ const ProductDetails = () => {
         quantity: quantity,
         image: images[0],
         badge: product.badge,
-        price: product.discountPrice || product.price,
+        price: parseFloat(product.discountPrice || product.price),
         colors: product.color,
       })
     );

@@ -101,7 +101,7 @@ const Product = (props) => {
                     quantity: 1,
                     image: images[0],
                     badge: props.badge,
-                    price: props.discountPrice || props.price,
+                    price: parseFloat(props.discountPrice || props.price),
                     colors: props.color,
                   })
                 )
