@@ -4,7 +4,6 @@ import {
   FaEnvelope,
   FaMobileAlt,
   FaShieldAlt,
-  FaLock,
   FaEye,
   FaEyeSlash,
   FaCheckCircle,

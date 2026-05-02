@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart, resetCart } from '../redux/onlineShoppingSlice';
 import { FaStar, FaRegStar, FaShoppingCart, FaHeart } from 'react-icons/fa';
 
