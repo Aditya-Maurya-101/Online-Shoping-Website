@@ -12,7 +12,7 @@
 
 **🚀 Live Demo:** [https://your-app-name.herokuapp.com](https://your-app-name.herokuapp.com)
 
-**📦 Version:** 1.0.0 | **📅 Last Updated:** May 2026 | **👨‍💻 Author:** [Your Name](https://github.com/yourusername)
+**📦 Version:** 1.0.0 | **📅 Last Updated:** May 2026 | **👨‍💻 Author:** [Aditya Maurya](https://github.com/Aditya-Maurya-101)
 
 ---
 
@@ -297,8 +297,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - 📧 **Email:** support@onlineshopping.com
 - 💬 **Discord:** [Join our community](https://discord.gg/yourserver)
-- 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/online-shopping-website/issues)
-- 📖 **Documentation:** [Wiki](https://github.com/yourusername/online-shopping-website/wiki)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/Aditya-Maurya-101/online-shopping-website/issues)
+- 📖 **Documentation:** [Wiki](https://github.com/Aditya-Maurya-101/online-shopping-website/wiki)
 
 ---
 
