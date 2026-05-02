@@ -19,16 +19,16 @@
 ## 📸 **Screenshots**
 
 ### 🏠 Homepage
-![Homepage Screenshot](https://via.placeholder.com/800x600/1F2937/FFFFFF?text=Homepage+Screenshot)
+![Homepage Screenshot](./screenShot/Home.png)
 
 ### 🛍️ Product Catalog
-![Product Catalog](https://via.placeholder.com/800x600/374151/FFFFFF?text=Product+Catalog)
+![Product Catalog](./screenShot/Shop.png)
 
 ### 🛒 Shopping Cart
-![Shopping Cart](https://via.placeholder.com/800x600/4B5563/FFFFFF?text=Shopping+Cart)
+![Shopping Cart](./screenShot/Cart.png)
 
-### 📱 Mobile Responsive
-![Mobile View](https://via.placeholder.com/400x800/6B7280/FFFFFF?text=Mobile+View)
+### 📱 My Order
+![Mobile View](./screenShot/Orders.png)
 
 ---
 
@@ -304,12 +304,16 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
+<<<<<<< HEAD
 **Made with ❤️ by [Adity Maurya]**
+=======
+**Made with ❤️ by [Aditya Maurya]**
+>>>>>>> a6fbf58 (latest update)
 
 ⭐ **Don't forget to star this repo if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/online-shopping-website?style=social)](https://github.com/yourusername/online-shopping-website/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/online-shopping-website?style=social)](https://github.com/yourusername/online-shopping-website/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/online-shopping-website?style=social)](https://github.com/Aditya-Maurya-101/online-shopping-website/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/online-shopping-website?style=social)](https://github.com/Aditya-Maurya-101/online-shopping-website/network/members)
 
 </div>
 
