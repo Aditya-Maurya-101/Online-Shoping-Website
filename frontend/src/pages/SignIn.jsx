@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../assets/images";
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_URL || "https://online-shoping-website.onrender.com";
+  process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const SignIn = () => {
   const navigate = useNavigate();

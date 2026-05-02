@@ -6,13 +6,12 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import Image from "../designLayouts/Image";
 import Badge from "./Badge";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/onlineShoppingSlice";
 
 const Product = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const user = useSelector((state) => state.onlineShoppingReducer.user);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const _id = props.productName;

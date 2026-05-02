@@ -10,7 +10,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../assets/images";
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || "https://online-shoping-website.onrender.com";
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
@@ -91,7 +91,7 @@ const SignUp = () => {
     } catch (error) {
       console.error("Signup request failed:", error);
       alert(
-        "Server error. Please make sure the backend is running at https://online-shoping-website.onrender.com and check the terminal for the exact error."
+        "Server error. Please make sure the backend is running at http://localhost:5000 and check the terminal for the exact error."
       );
       setIsSubmitting(false);
     }

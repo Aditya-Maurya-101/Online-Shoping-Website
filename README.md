@@ -207,7 +207,7 @@ npm run dev
 
 ### 🌐 **Access the Application**
 - **Frontend:** http://localhost:3000
-- **Backend API:** https://online-shoping-website.onrender.com
+- **Backend API:** http://localhost:5000
 
 ---
 

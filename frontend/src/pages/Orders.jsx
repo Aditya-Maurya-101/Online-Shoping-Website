@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBox, FaTruck, FaCheckCircle, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Breadcrumbs from '../components/pageProps/Breadcrumbs';
@@ -10,11 +10,7 @@ const Orders = () => {
   const [error, setError] = useState('');
   const [expandedOrder, setExpandedOrder] = useState(null);
 
-  useEffect(() => {
-    fetchOrders();
-  }, []);
-
-  const fetchOrders = async () => {
+  const fetchOrders = useCallback(async () => {
     try {
       setLoading(true);
       const token = localStorage.getItem('token');
@@ -26,21 +22,17 @@ const Orders = () => {
         return;
       }
 
-      const userData = JSON.parse(user);
       const headers = token ? { Authorization: `Bearer ${token}` } : {};
-      if (!token) {
-        headers['x-guest-email'] = userData.email;
-      }
 
       // Try to fetch from backend
       try {
-        const response = await fetch('https://online-shoping-website.onrender.com/api/orders/my-orders', {
+        const response = await fetch('http://localhost:5000/api/orders/my-orders', {
           headers
         });
 
         if (response.ok) {
           const data = await response.json();
-          setOrders(data.orders || []);
+          setOrders(data || []);
         } else {
           // Fallback: Load from localStorage
           loadOrdersFromLocalStorage();
@@ -58,7 +50,13 @@ const Orders = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  
+  useEffect(() => {
+    fetchOrders();
+  }, [fetchOrders]);
+
 
   const loadOrdersFromLocalStorage = () => {
     // Try to load dummy orders from localStorage if backend is not available
