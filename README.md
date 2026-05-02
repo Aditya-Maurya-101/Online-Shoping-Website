@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Project Banner](https://via.placeholder.com/1200x400/4F46E5/FFFFFF?text=Online+Shopping+Website)
-
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-16+-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-7.0+-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
@@ -46,12 +44,12 @@
 - ✅ **Admin Dashboard** - Complete admin panel for product management
 
 ### 🎨 **UI/UX Features**
-- ✅ **Modern Design** - Clean, professional interface with Tailwind CSS
-- ✅ **Responsive Layout** - Perfect on desktop, tablet, and mobile
-- ✅ **Smooth Animations** - GSAP-powered transitions and effects
-- ✅ **Dark/Light Mode** - Theme switching capability
-- ✅ **Accessibility** - WCAG compliant with keyboard navigation
-- ✅ **Loading States** - Beautiful loading animations and skeletons
+ ✅ **Modern Design** - Clean, professional interface with Tailwind CSS
+ ✅ **Responsive Layout** - Perfect on desktop, tablet, and mobile
+ ✅ **Smooth Animations** - GSAP-powered transitions and effects
+ ✅ **Dark/Light Mode** - Theme switching capability
+ ✅ **Accessibility** - WCAG compliant with keyboard navigation
+ ✅ **Loading States** - Beautiful loading animations and skeletons
 
 ### 🔧 **Technical Features**
 - ✅ **RESTful API** - Well-structured backend with Express.js
