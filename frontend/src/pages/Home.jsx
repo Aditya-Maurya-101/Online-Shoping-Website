@@ -59,22 +59,22 @@ const Home = () => {
       {/* Landing Hero */}
 <section className="relative overflow-hidden bg-white py-20 lg:py-28">
   {/* Background Effects */}
-  <div className="absolute top-0 left-0 w-72 h-72 bg-primeColor/10 rounded-full blur-3xl animate-pulse"></div>
-  <div className="absolute bottom-0 right-0 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
+   <div className="hidden md:block absolute top-0 left-0 w-52 h-52 md:w-72 md:h-72 bg-primeColor/10 rounded-full blur-3xl animate-pulse"></div>
+  <div className="hidden md:block absolute bottom-0 right-0 w-56 h-56 md:w-80 md:h-80 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
 
-  <div className="max-w-container mx-auto px-4">
+  <div className="max-w-container mx-auto px-4 sm:px-6">
     <div className="grid lg:grid-cols-2 gap-10 items-center">
 
       {/* Left Content */}
       <div
         data-aos="fade-right"
         data-aos-duration="1400"
-        className="space-y-7"
+        className="space-y-7 w-full px-2 sm:px-0"
       >
         <p
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-sm uppercase tracking-[0.4em] text-primeColor font-semibold"
+          className="text-xs sm:text-sm uppercase tracking-[0.3em] sm:tracking-[0.4em] text-primeColor font-semibold"
         >
           New Arrival Collection
         </p>
@@ -82,21 +82,21 @@ const Home = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-snug sm:leading-tight md:leading-tight break-words w-full overflow-hidden"
         >
-          <span className="inline-block animate-bounce">
+          <span className="block sm:inline animate-bounce">
             Discover
           </span>{" "}
-          <span className="text-primeColor typing-text">
+          <span className="block sm:inline text-primeColor typing-text break-words">
             Premium Shopping
           </span>{" "}
-          Experience
+           <span className="block sm:inline">Experience</span>
         </h1>
 
         <p
           data-aos="fade-up"
           data-aos-delay="500"
-          className="text-lg text-gray-600 leading-8 max-w-xl"
+          className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 leading-5 sm:leading-6 lg:leading-8 w-full break-words overflow-hidden"
         >
           Explore latest fashion, electronics, beauty products and daily essentials.
           Best quality, lowest price and fast delivery at your doorstep.
@@ -104,19 +104,20 @@ const Home = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-delay="700"
-          className="flex flex-col sm:flex-row gap-4"
+          data-aos-delay="3500"
+           data-aos-duration="800"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto"
         >
           <Link
             to="/shop"
-            className="px-8 py-4 rounded-full bg-primeColor text-white font-semibold hover:bg-black duration-300 shadow-xl hover:scale-105"
+            className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-primeColor text-white font-semibold hover:bg-black duration-300 shadow-xl hover:scale-105 text-sm sm:text-base transition-all"
           >
             Shop Now
           </Link>
 
           <Link
             to="/shop"
-            className="px-8 py-4 rounded-full border border-primeColor text-primeColor font-semibold hover:bg-primeColor hover:text-white duration-300 hover:scale-105"
+            className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 sm:py-4 rounded-full border border-primeColor text-primeColor font-semibold hover:bg-primeColor hover:text-white duration-300 hover:scale-105 text-sm sm:text-base transition-all"
           >
             View Collection
           </Link>
@@ -126,20 +127,23 @@ const Home = () => {
       {/* Right Side Visual */}
       <div
         data-aos="zoom-in-left"
-        data-aos-duration="1600"
-        className="relative flex justify-center items-center"
+        data-aos-duration="1200"
+        data-aos-delay="4200"
+        className="relative flex justify-center items-center mt-10 lg:mt-0"
       >
         <img
           src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80"
           alt="shopping"
-          className="rounded-[2rem] shadow-2xl w-full max-w-lg object-cover hover:scale-105 duration-500"
+          loading="lazy"
+          decoding="async"
+          className="rounded-[2rem] shadow-2xl w-full max-w-full sm:max-w-lg object-cover hover:scale-105 duration-500"
         />
 
         {/* Floating Discount Card */}
         <div
           data-aos="fade-down"
-          data-aos-delay="900"
-          className="absolute top-8 -left-6 bg-white shadow-xl rounded-2xl px-5 py-4 animate-bounce"
+          data-aos-delay="5200"
+          className="hidden sm:block absolute top-8 -left-6 bg-white shadow-xl rounded-2xl px-5 py-4 animate-bounce"
         >
           <p className="text-sm text-gray-500">Special Offer</p>
           <h3 className="text-2xl font-bold text-primeColor">50% OFF</h3>
@@ -148,8 +152,8 @@ const Home = () => {
         {/* Floating Delivery Card */}
         <div
           data-aos="fade-up"
-          data-aos-delay="1100"
-          className="absolute bottom-8 -right-6 bg-white shadow-xl rounded-2xl px-5 py-4 animate-bounce"
+          data-aos-delay="5400"
+          className="hidden sm:block absolute bottom-8 -right-6 bg-white shadow-xl rounded-2xl px-5 py-4 animate-bounce"
         >
           <p className="text-sm text-gray-500">Fast Delivery</p>
           <h3 className="text-xl font-bold text-gray-900">24 Hours</h3>
@@ -165,10 +169,29 @@ const Home = () => {
       .typing-text {
         display: inline-block;
         overflow: hidden;
-        white-space: nowrap;
+        word-break: break-word;
         border-right: 3px solid #000;
-        width: 0;
-        animation: typing 3s steps(18,end) forwards, blink .8s infinite;
+        animation: typing-mobile 3.2s steps(16,end) forwards, blink .8s infinite;
+      }
+
+      @media screen and (min-width: 640px) {
+        .typing-text {
+          white-space: nowrap;
+          border-right: 3px solid #000;
+          width: 0;
+          animation: typing 3.2s steps(18,end) forwards, blink .8s infinite;
+        }
+      }
+
+      @keyframes typing-mobile {
+        0% { 
+          max-width: 0;
+          opacity: 1;
+        }
+        100% { 
+          max-width: 100%;
+          opacity: 1;
+        }
       }
 
       @keyframes typing {
