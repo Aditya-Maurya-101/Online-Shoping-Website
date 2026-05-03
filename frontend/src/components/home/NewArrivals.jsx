@@ -47,7 +47,7 @@ const NewArrivals = () => {
     ],
   };
   return (
-    <div className="w-full pb-16">
+    <div className="w-full pb-16 overflow-hidden">
       <Heading heading="New Arrivals" />
       <Slider {...settings}>
         <div className="px-2">

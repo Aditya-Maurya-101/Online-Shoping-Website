@@ -6,11 +6,15 @@
 
 @layer base {
   /* site background (soft gradient) + comfortable minimum height */
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background: linear-gradient(135deg, #F7F7F7 0%, #E8FFFC 100%);
     color: #0f1724; /* ensure readable text on the new bg */
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 
@@ -69,6 +73,33 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* Mobile-friendly text wrapping */
+  .word-break {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Hero section responsive padding */
+  @media screen and (max-width: 640px) {
+    h1 {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    p {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      max-width: 100%;
+      margin: 0;
+      line-height: 1.4;
+    }
   }
 }
 

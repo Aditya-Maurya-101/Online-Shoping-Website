@@ -55,7 +55,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto bg-white">
+    <div className="w-full mx-auto bg-white overflow-x-hidden">
       {/* Landing Hero */}
 <section className="relative overflow-hidden bg-white py-20 lg:py-28">
   {/* Background Effects */}

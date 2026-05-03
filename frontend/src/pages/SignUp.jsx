@@ -86,7 +86,7 @@ const SignUp = () => {
       localStorage.setItem("token", data.token);
 
       alert("Account created successfully.");
-      navigate("/profile");
+      navigate("/");
     } catch (error) {
       console.error("Signup request failed:", error);
       alert(

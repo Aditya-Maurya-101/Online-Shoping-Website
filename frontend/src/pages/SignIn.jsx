@@ -68,7 +68,7 @@ const SignIn = () => {
 
       localStorage.setItem("token", data.token);
 
-      navigate("/profile");
+      navigate("/");
     } catch (error) {
       alert("Server error");
     }

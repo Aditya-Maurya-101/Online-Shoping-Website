@@ -17,6 +17,7 @@ const allowedOrigins = (process.env.FRONTEND_URLS || process.env.FRONTEND_URL ||
   .filter(Boolean);
 
 const localhostOriginRegex = /^https?:\/\/localhost(:\d+)?$/i;
+const localNetworkOriginRegex = /^https?:\/\/(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3})(:\d+)?$/i;
 const vercelOriginRegex = /^https:\/\/[a-z0-9-]+\.vercel\.app$/i;
 
 const corsOptions = {
@@ -27,6 +28,7 @@ const corsOptions = {
     if (
       allowedOrigins.includes(origin) ||
       localhostOriginRegex.test(origin) ||
+      localNetworkOriginRegex.test(origin) ||
       vercelOriginRegex.test(origin)
     ) {
       return callback(null, true);

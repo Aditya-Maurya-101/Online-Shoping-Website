@@ -33,7 +33,8 @@ const Orders = () => {
 
         if (response.ok) {
           const data = await response.json();
-          setOrders(data || []);
+          const ordersData = Array.isArray(data?.orders) ? data.orders : [];
+          setOrders(ordersData);
         } else {
           // Fallback: Load from localStorage
           loadOrdersFromLocalStorage();
@@ -131,6 +132,8 @@ const Orders = () => {
     }
   };
 
+  const normalizedOrders = Array.isArray(orders) ? orders : [];
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 py-8">
@@ -169,7 +172,7 @@ const Orders = () => {
           </div>
         ) : (
           <div className="space-y-4">
-            {orders.map((order) => (
+            {normalizedOrders.map((order) => (
               <div key={order._id || order.orderNumber} className="bg-white rounded-lg shadow">
                 {/* Order Header */}
                 <div
