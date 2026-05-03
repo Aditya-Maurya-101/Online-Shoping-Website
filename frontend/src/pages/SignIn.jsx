@@ -9,9 +9,7 @@ import {
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../assets/images";
-
-const API_BASE_URL =
-  process.env.REACT_APP_API_URL || "https://online-shoping-website.onrender.com";
+import API_BASE_URL from "../utils/api";
 
 const SignIn = () => {
   const navigate = useNavigate();

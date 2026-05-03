@@ -106,29 +106,36 @@ export const animateStaggerList = (selector) => {
 
 // Scroll trigger fade in
 export const animateOnScroll = (selector, options = {}) => {
-  gsap.fromTo(
-    selector,
-    {
-      opacity: 0,
-      y: 50,
-      ...options.from,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: selector,
-        start: 'top 80%',
-        end: 'top 20%',
-        scrub: false,
-        markers: false,
-        ...options.scrollTrigger,
+  const targets = gsap.utils.toArray(selector);
+  if (targets.length === 0) {
+    return;
+  }
+
+  targets.forEach((target) => {
+    gsap.fromTo(
+      target,
+      {
+        opacity: 0,
+        y: 50,
+        ...options.from,
       },
-      ...options.to,
-    }
-  );
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: target,
+          start: 'top 80%',
+          end: 'top 20%',
+          scrub: false,
+          markers: false,
+          ...options.scrollTrigger,
+        },
+        ...options.to,
+      }
+    );
+  });
 };
 
 // Floating animation

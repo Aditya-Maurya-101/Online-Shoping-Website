@@ -54,7 +54,7 @@ const CategorySection = ({ category, title, subtitle }) => {
       )}
       <Slider {...settings}>
         {categoryProducts.map((item) => (
-          <div key={item._id} className="px-2">
+          <div key={item._id} className="px-2 category-card hover-scale-card">
             <Product
               _id={item._id}
               img={item.img}

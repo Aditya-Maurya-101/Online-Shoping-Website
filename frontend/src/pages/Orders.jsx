@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBox, FaTruck, FaCheckCircle, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Breadcrumbs from '../components/pageProps/Breadcrumbs';
+import API_BASE_URL from '../utils/api';
 
 const Orders = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Orders = () => {
 
       // Try to fetch from backend
       try {
-        const response = await fetch('https://online-shoping-website.onrender.com/api/orders/my-orders', {
+        const response = await fetch(`${API_BASE_URL}/api/orders/my-orders`, {
           headers
         });
 

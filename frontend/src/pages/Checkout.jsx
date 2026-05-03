@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { resetCart } from "../redux/onlineShoppingSlice";
+import API_BASE_URL from "../utils/api";
 
 const CheckoutForm = ({ totalAmount, onSuccess, cartItems }) => {
   const dispatch = useDispatch();
@@ -184,7 +185,7 @@ const CheckoutForm = ({ totalAmount, onSuccess, cartItems }) => {
       }
 
       const response = await axios.post(
-        "https://online-shoping-website.onrender.com/api/orders/create-order",
+        `${API_BASE_URL}/api/orders/create-order`,
         orderData,
         { headers }
       );

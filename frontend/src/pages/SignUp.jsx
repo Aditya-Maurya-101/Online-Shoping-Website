@@ -9,8 +9,7 @@ import {
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../assets/images";
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || "https://online-shoping-website.onrender.com";
+import API_BASE_URL from "../utils/api";
 
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
@@ -91,7 +90,7 @@ const SignUp = () => {
     } catch (error) {
       console.error("Signup request failed:", error);
       alert(
-        "Server error. Please make sure the backend is running at https://online-shoping-website.onrender.com and check the terminal for the exact error."
+        `Server error. Please make sure the backend is running at ${API_BASE_URL} and check the terminal for the exact error.`
       );
       setIsSubmitting(false);
     }
