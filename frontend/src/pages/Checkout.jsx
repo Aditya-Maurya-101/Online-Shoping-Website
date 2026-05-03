@@ -184,7 +184,7 @@ const CheckoutForm = ({ totalAmount, onSuccess, cartItems }) => {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/orders/create-order",
+        "https://online-shoping-website.onrender.com/api/orders/create-order",
         orderData,
         { headers }
       );
