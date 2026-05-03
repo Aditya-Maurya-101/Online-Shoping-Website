@@ -10,7 +10,7 @@
 [![GSAP](https://img.shields.io/badge/GSAP-3.15+-0AC775?style=for-the-badge&logo=greensock)](https://greensock.com/gsap/)
 [![Redux](https://img.shields.io/badge/Redux_Toolkit-1.9+-764ABC?style=for-the-badge&logo=redux)](https://redux-toolkit.js.org/)
 
-**🚀 Live Demo:** [https://your-app-name.herokuapp.com](https://your-app-name.herokuapp.com)
+**🚀 Live Demo:** https://online-shoping-website-uizw.vercel.app
 
 **📦 Version:** 1.0.0 | **📅 Last Updated:** May 2026 | **👨‍💻 Author:** [Aditya Maurya](https://github.com/Aditya-Maurya-101)
 
